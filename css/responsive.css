@@ -19,9 +19,22 @@
 /* #Tablet (Portrait)
 ================================================== */
 /*margin: 0 auto*/
-    /* Note: Design for a width of 768px */
+/* Note: Design for a width of 768px */
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	#featured-content{
+		visibility: hidden;
+	}
+	
+	#spotlight{
+		display:none;
+	}
+	
+	#upcoming-shows{
+		position: relative;
+		top: -40px;
+	}
+
 
 }
 
@@ -34,7 +47,6 @@
 	/*header for mobile*/
 	#social-media-header{
 		visibility: hidden;
-		
 	}
 	
 	#navigation ul > li > a {
@@ -44,6 +56,14 @@
 		font-size: 1.3em;
 		padding-right: 5px;
 		color: #000000;
+	}
+	
+	#featured-content{
+		display:none;
+	}
+	
+	#spotlight{
+		display:none;
 	}
 }
 
@@ -63,6 +83,15 @@
 		font-size: 1.0em;
 		padding-right: 5px;
 		color: #000000;
+	}
+	
+	#featured-content{
+		visibility: hidden;
+	}
+	
+	#upcoming-shows{
+		position: relative;
+		top: -40px;
 	}
 
 }

@@ -24,7 +24,7 @@ h4 {
 
 html, body {
 	height: 100%;
-	background: url('img/bg.jpg');
+	background: url('../img/bg.jpg');
 }
 
 .side {
@@ -166,14 +166,6 @@ li {
 .section-colored {
 }
 
-.section-colored {
-	/*background-color: #e1e1e1;*/ /* change this to change the background color of a colored section */
-	border-top: 4px solid #e1e1e1;
-	border-bottom: 4px solid #e1e1e1;
-	margin: 0 auto;
-	width: 95%;
-	;
-}
 
 .full-width-image {
 	background-color: red;
@@ -327,6 +319,9 @@ footer {
 	margin: 10px 0px 10px 0px;
 }
 
+#spotlight{
+	padding-bottom: 75px;
+}
 
 
 
@@ -347,9 +342,7 @@ footer {
 	z-index: 8;
 	color: #D2232A;
 }
-#featured-content {
-	margin-left: -40px;
-}
+
 #about {
 	/*fix width when text is done*/
 	border-bottom: 1px solid #000000;
@@ -441,9 +434,7 @@ footer {
 }
 
 .sidebar-donate {
-	margin-left: 20%;
-	margin-right: 20%;
-	padding-bottom: 10px;
+
 }
 
 .sidebar-soundcloud {

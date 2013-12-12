@@ -1,54 +1,8 @@
-$(document).ready(function(){
 
-	var stream = {
-		title: "WLUW Chicago Sound Alliance",
-		mp3: "http://amber.streamguys.com:4100/stream.mp3"
-	},
-	ready = false;
-
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream);
-		},
-		pause: function() {
-			$(this).jPlayer("clearMedia");
-		},
-		error: function(event) {
-			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-				// Setup the media stream again and play it.
-				$(this).jPlayer("setMedia", stream).jPlayer("play");
-			}
-		},
-		swfPath: "js",
-		supplied: "mp3",
-		preload: "none",
-		wmode: "window",
-		keyEnabled: true
-	});
-
-}); 
 
 soundcloud.addEventListener('onPlayerReady', function(player, data) {
   player.api_play();
 });
-   
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=599380420125665";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-<script>
- $(document).ready(function(){
-      $('#slider1').bxSlider({
-	    pager: true
-	    }
-	  );
-  });
-
-
-
 var jplayerswf = "http://www.loyolaphoenix.com/wp-content/plugins/haiku-minimalist-audio-player/js/";
 
 

@@ -19,9 +19,9 @@
 
     <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
 
+<link rel="stylesheet" href="js/haiku-player.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
-    <link rel='stylesheet' id='haiku-css'  href='haiku-player.css' type='text/css' media='screen' />
-    <link rel='stylesheet' id='fancyboxcss-css'  href='js/fancybox/jquery.fancybox-1.3.4.css?ver=3.5' type='text/css' media='all' />
+
 
     <script src="js/jquery.bxSlider.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/animatedcollapse.js" type="text/javascript" charset="utf-8"></script>
@@ -29,13 +29,15 @@
     <script src="js/jcarousellite_1.0.1.js" type="text/javascript" charset="utf-8"></script>
     <script type='text/javascript' src='js/jquery.cycle.all.min.js?ver=3.5'></script>
     <script type='text/javascript' src='js/jquery.tools.min.js?ver=3.5'></script>
-    <script type='text/javascript' src='http://apis.google.com/js/plusone.js?ver=3.5'></script>
-    <script type='text/javascript' src='js/flowplayer/flowplayer-3.2.6.min.js?ver=3.5'></script>
+<script src="js/flowplayer-3.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+
     <script type='text/javascript' src='js/superfish-1.4.8.js?ver=3.5'></script>
     <script type='text/javascript' src='js/jCarouselLite.js?ver=3.5'></script>
     <script type='text/javascript' src='js/general.js?ver=3.5'></script>
-    <script type='text/javascript' src='js/fancybox/jquery.mousewheel-3.0.4.pack.js?ver=3.5'></script>
-    <script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=3.5'></script>
+<link rel="stylesheet" href="js/jquery.fancybox-1.3.4.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="js/jquery.fancybox-1.3.4.pack.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.mousewheel-3.0.4.pack.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/general.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="stylesheet" href="skin/circle.skin/circle.player.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
@@ -43,6 +45,9 @@
     <script type="text/javascript" src="js/soundcloud.player.api.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <script type='text/javascript' src='js/fancybox/jquery.mousewheel-3.0.4.pack.js?ver=3.5'></script>
+    <script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=3.5'></script>
+	
     </head>
 
     <script>
@@ -53,46 +58,6 @@
     </script>
   </head>
   <body>
-      <script src="js/mega-script.js" type="text/javascript" charset="utf-8"></script>
-	  <script>
-	var spacerInPlace = null;
-	if($(window).width <= 480){
-		spacerInPlace = false;
-		$("#nav-spacer").remove();
-		
-	}
-	else{
-		spacerInPlace = true;
-	}
-	
-  	$(window).resize(function() {
-  			if($(window).width() <= 480) {
-  				player = $('#streaming-player').detach();
-				player.removeClass('col-xs-4 ').addClass('col-xs-12').addClass('col-centered');
-				player.wrap('<div class="row"></div>');
-				$("header").append(player);
-				if(spacerInPlace == true){
-					$("#nav-spacer").remove();
-					spacerInPlace = false;
-				}
-  			}
-			else if($(window).width() > 480){
-  				player = $('#streaming-player').detach();
-				player.removeClass('col-xs-12').removeClass('col-centered').addClass('col-xs-4');
-				player.insertBefore("#header-logo");
-				console.log($("#nav-spacer").length);
-				if(spacerInPlace == false){
-					console.log($("#nav-spacer").length);
-					$("#navigation").parent().prepend('<div id="nav-spacer" class="col-xs-3 col-sm-3  col-md-3 col-lg-3"></div>');
-					spacerInPlace = true;
-				}		
-			}
-			
-  		});
-	  </script>
-	  
-	  
-	  
 <div class="container">
       <header>
               <div class="row">
@@ -179,7 +144,7 @@
    <!-- Begin Content -->
  <div class="container">
        <div id="main-content" class="row">
-            <div class="col-xs-3 col-sm-3  col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             	<div id="">
             		<div class="italic-heading">
             		<h4><i>recently played</i></h4>
@@ -259,7 +224,7 @@
 							
             	</div>
             </div>
-            <div class="col-xs-6 col-sm-6  col-md-6 col-lg-6">
+            <div id="spotlight-column" class="col-sm-6 col-md-6 col-lg-6">
             	<div id="spotlight">
             		<div id="featured-content">
             			<div id="featured-slider">
@@ -335,7 +300,6 @@
             			</div>
             		</div>
             	</div>
-            	<br/><br/><br/><br/>
                 <script type="text/javascript"> 
                 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
                 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -476,16 +440,14 @@
             			</div>
             	</div>
             </div>
-            <div class="col-lg-3">
-            	<div class="sidebar-donate">
-            		<a href="https://secure2.convio.net/luc/site/Donation2?1900.donation=form1&idb=686504639&df_id=1900"><img src="img/donateblack.gif" width="154" height="400" alt="Donateblack"></a>
-            	</div>
+            <div id="sidebar-donate" class="col-sm-3 col-md-3 col-lg-3">
+            		<a href="https://secure2.convio.net/luc/site/Donation2?1900.donation=form1&idb=686504639&df_id=1900"><img src="img/donateblack.gif"  alt="Donateblack"></a>
+            	
             	<div class="sidebar-soundcloud">
             		<iframe width="220" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F109590448"></iframe>
-	
-            	</div>
-            	<img src="img/sidebar-ad.png" width="220" height="353" alt="Sidebar Ad">
-            </div>
+			<img src="img/sidebar-ad.png" width="220" height="353" alt="Sidebar Ad">
+                </div>
+	    </div>
         </div>
 </div>
 <!-- end content -->
@@ -495,26 +457,28 @@
 <div class="container">
       <footer>
               <div class="row">
-	      		<div class="">
+	      		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 	      				<br/><a href="" title="">History</a>
 	      				<br/><a href="" title="">Head Honchos</a>
 	      				<br/><a href="" title="">DJ's'</a>
 	      		</div>
-	      		<div class="">
+	      		<div class="col-xs-3 col-sm-3  col-md-3 col-lg-3">
 	      				 <br/><a href="">Schedule</a>
 	      				 <br/><a href="">Events</a>
 	      	             <br/><a href="">Playlist Archives</a>
 	      		</div>
-	      		<div class="">
+	      		<div class="col-xs-3 col-sm-3  col-md-3 col-lg-3">
 	      				</br><a href="#">Recent Posts</a>
 	      				</br><a href="#">Concerts</a>
 	      				</br><a href="#">Reviews</a>
 	      		</div>
-	      		<div class="">
-	      			<strong>© 2012 WLUW-FM 88.7</strong><br>
-	      			Chicago Sound Alliance,<br> broadcasting from the campus of Loyola University Chicago
-	      		</div>
            </div>	
+	   <div class="row">
+		<div class="col-xs-12">
+			<strong>© 2012 WLUW-FM 88.7</strong><br>
+			Chicago Sound Alliance,<br> broadcasting from the campus of Loyola University Chicago
+		</div>
+	   </div>
       </footer>
   </div>
       <!-- end footer -->
@@ -524,7 +488,131 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/modern-business.js"></script>
+  <script>
+  
+  </script>
+  <script>
+  (function($) {
+  	$(document).ready(function() { 
+
+  		$('a[href=#top]').click(function(){
+  			$('html, body').animate({scrollTop:0}, 'slow');
+  			return false;
+  		});
+
+  		$("a[rel=gab_gallery]").fancybox({
+  			'transitionIn'		: 'none',
+  			'transitionOut'		: 'none',
+  			'titlePosition' 	: 'over',
+  			'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+  				return '<span id="fancybox-title-over">' + title /* + ' ('+(currentIndex + 1) + ' / ' + currentArray.length + ')' */ +'</span>';
+  			}
+  		});			
+
+  		$(".show").fancybox({  
+  			'titleShow'     : 'false',  
+  			'transitionIn'      : 'fade',  
+  			'transitionOut'     : 'fade'  
+  		});
+
+  		$(".iframe").fancybox({	
+  			'width'	: '75%',
+  			'height' : '75%',
+  			'autoScale'     	: false,
+  			'transitionIn'		: 'none',
+  			'transitionOut'		: 'none',
+  			'type'				: 'iframe'
+  		});
+  						$('#featured-slider .fea-slides').cycle({ 
+  				pauseOnPagerHover: 1,
+  				prev:   '.fea_prev',
+  				next:   '.fea_next',
+  				pauseOnPagerHover: 1,
+  				fx:     'fade',
+  				timeout: '15000',
+  				speed: '1000',
+  				pager:  '#featured-nav', 
+  				pagerAnchorBuilder: function(idx, slide) { 
+  					// return selector string for existing anchor 
+  					return '#featured-nav li:eq(' + idx + ') a'; 
+  				} 
+  			});
+
+  			$('#video-slider .fea-slides').cycle({ 
+  				pauseOnPagerHover: 1,
+  				prev:   '.vid_prev',
+  				next:   '.vid_next',
+  				pager:  '#vid-nav', 
+  				fx:     'fade',
+  				timeout: 0
+  			});
+
+  			$('#mid-slider .fea-slides').cycle({ 
+  				fx:     'fade', 
+  				timeout: 0,
+  				prev:   '.media_prev',
+  				next:   '.media_next',
+  				pauseOnPagerHover: 1,
+  				pager:  '#mid-slider-pagination', 
+  				pagerAnchorBuilder: function(idx, slide) { 
+  					// return selector string for existing anchor 
+  					return '#mid-slider-pagination li:eq(' + idx + ') a'; 
+  				} 
+  			});					
+
+  		$("ul.tabs").tabs("div.panes > div");
+
+  	});
+	
+    var spacerInPlace = null;
+    var spotlightInLight = null;
+    var spotSlot = null;
+    if($(window).width <= 480){
+    	spacerInPlace = false;
+    	spotlightInLight = false;
+    	$("#nav-spacer").remove();
+    	spotSlot = $("#spotlight").detach();
+    }
+    else{
+    	spacerInPlace = true;
+    	spotlightInLight = true;
+    }
+
+    $(window).resize(function() {
+    		if($(window).width() <= 480) {
+    			player = $('#streaming-player').detach();
+    			player.removeClass('col-xs-4 ').addClass('col-xs-12').addClass('col-centered');
+    			player.wrap('<div class="row"></div>');
+    			$("header").append(player);
+    			if(spacerInPlace == true){
+    				$("#nav-spacer").remove();
+    				spacerInPlace = false;
+    			}
+    			// if(spotlightInLight == true){
+	//     				spotSlot = $("#spotlight").detach();
+	//     				spotlightInLight = false;
+	//     			}
+    		}
+    		else if($(window).width() > 480){
+    			player = $('#streaming-player').detach();
+    			player.removeClass('col-xs-12').removeClass('col-centered').addClass('col-xs-4');
+    			player.insertBefore("#header-logo");
+    			console.log($("#nav-spacer").length);
+    			if(spacerInPlace == false){
+    				console.log($("#nav-spacer").length);
+    				$("#navigation").parent().prepend('<div id="nav-spacer" class="col-xs-3 col-sm-3  col-md-3 col-lg-3"></div>');
+    				spacerInPlace = true;
+    			}
+		
+    			// if(spotlightInLight == false){
+//     				$("#spotlight-column").prepend(spotSlot);
+//     				spotlightInLight = true;
+//     			}		
+    		}
+	
+    	});
+  })(jQuery);
+  </script>
   </body>
 </html>
 </strong>
