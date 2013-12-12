@@ -1,0 +1,70 @@
+
+
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+	#social-media-header{
+		visibility: visible;
+	}
+
+}
+
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+/*margin: 0 auto*/
+    /* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+	/*header for mobile*/
+	#social-media-header{
+		visibility: hidden;
+		
+	}
+	
+	#navigation ul > li > a {
+		float: left;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1.3em;
+		padding-right: 5px;
+		color: #000000;
+	}
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#social-media-header{
+		visibility: hidden;
+	}
+	
+	#navigation ul > li > a {
+		float: left;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1.0em;
+		padding-right: 5px;
+		color: #000000;
+	}
+
+}
+
+
