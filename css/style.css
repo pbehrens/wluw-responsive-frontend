@@ -310,7 +310,7 @@ li {
 
 /* Footer Styles */
 footer {
-	margin: 50px 0;
+
 }
 
 .blog-post {
@@ -452,8 +452,9 @@ footer {
 	padding-right: 4px;
 }
 
-
-.sidebar-donate {
+.sidebar-donations a img{
+    display:block;
+    margin:auto;
 
 }
 
@@ -859,4 +860,20 @@ footer {
 
 .time-slot-link.time-slot-chosen {
 	background-color: #ffffff !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0em;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.20);
 }
