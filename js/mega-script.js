@@ -1,8 +1,7 @@
-
-
 soundcloud.addEventListener('onPlayerReady', function(player, data) {
   player.api_play();
 });
+   
 var jplayerswf = "http://www.loyolaphoenix.com/wp-content/plugins/haiku-minimalist-audio-player/js/";
 
 

@@ -418,6 +418,15 @@ footer {
 .log .artist-name {
 }
 
+
+.mobile-spread .log {
+	text-align: center;
+}
+
+.mobile-spread .italic-heading{
+	text-align:center;
+}
+
 .log ul {
 	list-style-type: none;
 	margin-left: 0px;
@@ -425,6 +434,10 @@ footer {
 
 .log li {
 	line-height: 15px;
+}
+
+.dj {
+	text-align:center;
 }
 
 .slider-pane {
@@ -445,6 +458,7 @@ footer {
 	padding-left: 4px;
 	padding-right: 4px;
 }
+
 
 .sidebar-donate {
 
