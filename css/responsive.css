@@ -10,7 +10,6 @@
 	#social-media-header{
 		visibility: visible;
 	}
-
 }
 
 
@@ -45,6 +44,8 @@
 	}
 
 
+
+
 }
 
 /*  #Mobile (Portrait)
@@ -74,6 +75,7 @@
 	#spotlight{
 		display:none;
 	}
+
 }
 
 /* #Mobile (Landscape)
