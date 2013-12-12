@@ -95,6 +95,10 @@
 	#header-logo {
 		
 	}
+	
+	#streaming-player{
+		display:none;
+	}
 
 }
 
