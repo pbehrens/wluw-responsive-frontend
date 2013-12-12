@@ -75,6 +75,7 @@ a:hover {
 }
 a.clickedOn {
 font-weight: bold;
+
 }
 
 a.clickedOnSub {
@@ -6040,6 +6041,7 @@ body.modal-open,
   height: auto;
   max-width: 100%;
   line-height: 1;
+  opacity:0.8;
 }
 
 .carousel-inner > .active,
@@ -6190,7 +6192,7 @@ body.modal-open,
   padding-bottom: 20px;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: black 0.1em 0.1em 0.8em;
 }
 
 .carousel-caption .btn {
