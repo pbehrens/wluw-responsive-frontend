@@ -5,6 +5,15 @@ Custom CSS for...
 All Start Bootstrap themes are licensed under Apache 2.0. 
 For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
 */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
 
 /* Global Styles */
 
@@ -76,7 +85,9 @@ body {
 #navigation ul li:hover {
 	text-shadow: 0px 0px 3px rgba(255,255,255,.76);
 }
-
+#navigation ul li:active {
+    font-weight:500;
+}
 .logo-text:hover {
 	text-shadow: 0px 0px 3px rgba(255,255,255,.76);
 
@@ -101,6 +112,8 @@ li {
 	font-weight: 300;
 	font-size: 18px;
 }
+
+
 
 .main-pic {
 	height: 400px;
