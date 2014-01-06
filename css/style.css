@@ -59,18 +59,16 @@ body {
 
 
 #navigation ul li {
-	font-size: 16px;
 	list-style-type: none;
-	position: relative;
 	display: inline;
 }
 
 #navigation ul  > li > a{
+	font-size: 1.3em;
+	padding-right: 35px;
        display: inline-block;
        text-decoration:none;
-       font-size: 1.3em;
-       padding-right:5px;
-	   color: #f1a95c;
+	color: #f1a95c;
 }
 
 #navigation ul li:hover {
@@ -644,47 +642,41 @@ footer {
 #exec-staff-list ul li {
 	float: none;
 	list-style: none;
-	border-bottom: 1px solid #000000;
+	border-bottom: 3px solid #eeeeee;
 	height: 150px;
 	padding-top: 20px;
 }
-
-.staff-member {
-	width: 80%;
+.staff-member{
+	width:100%;
 }
-.staff-member-photo {
+.staff-member a {
+	font-size: 15px;
+}
+
+
+#exec-staff-list ul li img{
 	float: left;
 	display: inline;
-	width: 80px;
-	height: 150px;
-	font-weight: 900;
+	max-width:100px;
 }
+
+#exec-staff-list ul li p{
+	margin-bottom:0px;
+	font-weight:400;
+}
+
 .staff-member-description {
-	display: inline;
-	margin-left: 40px;
-	margin-top: -10px;
+	display: block;
+	margin-left: 130px;
+	margin-top: -20px;
 }
 
-.staff-member h4 {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size: 30px;
-}
 
-.staff-member h5 {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size: 20px;
-}
-.staff-member-description #stage ul li div h4 {
-	font-size: 1.2em;
-	position: relative;
-	top: -3px;
-}
+
+
 
 .exec-duties {
-	float: right;
-	display: block;
-	position: relative;
-	bottom: 80px;
+
 }
 
 /*Schedule page*/
@@ -721,16 +713,21 @@ footer {
 	padding-right: 20px;
 }
 
+
+
+
 #blog-list .post {
 	position: relative;
 	margin: 0 0 40px 0;
 	padding: 0 0 26px 0;
 	overflow: hidden;
-	background: url(/media/img/underline.png) bottom repeat-x;
+	background: url(../img/underline.png) bottom repeat-x;
 }
 #blog-list .post h2 {
 	display: block;
-	margin: 0 0 10px 75px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 85px;
 	font: 24px Lucida Grande, Lucida Sans Unicode, Helvetica, Sans-Serif;
 	letter-spacing: normal;
 }
@@ -741,7 +738,7 @@ footer {
 	left: 0;
 	top: 0;
 	padding: 4px 7px 4px 7px;
-	background: url(/media/img/lines.png);
+	background: url(../img/lines.png);
 	font: bold 40px Helvetica, Sans-Serif;
 	color: #b6b6b1;
 	text-align: center;
@@ -755,7 +752,7 @@ footer {
 	float: left;
 	display: inline;
 	list-style: none;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-left: 75px;
 	overflow: hidden;
 	font: 16px Helvetica, Sans-Serif;
@@ -767,13 +764,14 @@ footer {
 }
 #blog-list .post ul.meta li.comments {
 	padding-left: 20px;
-	background: url(img/star.png) left center no-repeat;
+	background: url(../7img/star.png) left center no-repeat;
 }
 #blog-list .post .post-content {
 	display: block;
 	clear: both;
-	padding-top: 15px;
+	padding-top: 10px;
 }
+
 
 
 #blog-list .pagination {
