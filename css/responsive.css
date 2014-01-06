@@ -125,7 +125,7 @@
 	}
 	
 	#exec-staff-list ul li {
-	height: 400px;
+	height: 375px;
 	display:block;
 	margin: 0 auto;
 	}
@@ -192,7 +192,7 @@
 	}
 	
 	#exec-staff-list ul li {
-	height: 400px;
+	height: 375px;
 	}
 	
 	#exec-staff-list .staff-member a {
@@ -211,7 +211,4 @@
 		margin: 0 auto;
 	}
 }
-
-
-
 

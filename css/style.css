@@ -638,14 +638,18 @@ footer {
 }
 
 /*Exec staff styles*/
-
+#exec-staff-list ul{
+	display:block;
+	margin: 0 auto;
+}
 #exec-staff-list ul li {
-	float: none;
 	list-style: none;
 	border-bottom: 3px solid #eeeeee;
 	height: 150px;
 	padding-top: 20px;
 }
+
+
 .staff-member{
 	width:100%;
 }
@@ -679,21 +683,77 @@ footer {
 
 }
 
-/*Schedule page*/
 
-.schedule-list ul li {
+/* Weekly Schedule Of DJ's*/
+
+
+#schedule-days-of-week{
+	
+}
+#schedule-days-of-week ul {
+	background-color: #eeeeee;
+	height:75px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;	
+}
+#schedule-days-of-week ul li{
 	list-style: none;
-	padding-bottom: 30px;
-	font-size: 20px;
-	line-height: 10px;
-	position: relative;
-	right: 40px;
+	display: inline;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width:100%;
+
 }
 
-.schedule-list ul {
+#schedule-days-of-week ul li a{
+	display:inline-block;
+	top:5px;
+	padding-right:2%;
+	padding-left: 2%;
+	font-size: 24px;
+	font-weight:600;
+	line-height: 75px;
+	height:75px;
 }
 
 
+
+#schedule-days-of-week ul a:hover {
+	background-color: green;
+}
+
+#schedule-time-of-day{
+	
+}
+#schedule-time-of-day ul{
+	margin-top: -15px;
+}
+
+#schedule-time-of-day ul li{
+	list-style: none;
+	margin-left:-40px;
+	padding-bottom:30px;
+	padding-right: 20px;
+}
+
+#schedule-time-of-day .active-day{
+	background-color: green;
+}
+
+#schedule-time-of-day ul li a{
+	font-weight:800;
+}
+
+.arrow-center{
+	display:block;
+	margin:0 auto;
+	position:relative;
+	right:20px;
+}
 /*Footer*/
 #footer {
 	border-top: 2px solid #000000;
@@ -854,6 +914,10 @@ footer {
 }
     
 #schedule-days {
+}
+
+#schedule-list{
+	margin-top: -50px;
 }
 
 .time-slot-link.time-slot-chosen {
