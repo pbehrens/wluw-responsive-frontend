@@ -697,6 +697,7 @@ footer {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;	
+	
 }
 #schedule-days-of-week ul li{
 	list-style: none;
@@ -735,9 +736,11 @@ footer {
 
 #schedule-time-of-day ul li{
 	list-style: none;
-	margin-left:-40px;
-	padding-bottom:30px;
+	margin-left: -40px;
+	padding-bottom: 30px;
 	padding-right: 20px;
+	padding-left: 25px;
+	background-color: #eeeeee;
 }
 
 #schedule-time-of-day .active-day{
@@ -746,13 +749,20 @@ footer {
 
 #schedule-time-of-day ul li a{
 	font-weight:800;
+	text-align:center;
 }
+
+
+#schedule-time-of-day ul li:hover{
+	background-color: #ffffff;
+}
+
 
 .arrow-center{
 	display:block;
 	margin:0 auto;
 	position:relative;
-	right:20px;
+	right:5px;
 }
 /*Footer*/
 #footer {
